@@ -1,5 +1,5 @@
 var PARTICLES_COUNT = 10000;
-var PARTICLE_RADIUS = 1;
+var PARTICLE_RADIUS = 3;
 var ANIMATION_INTERVAL = 5;
 
 var canvas;
@@ -22,8 +22,8 @@ function draw()
   document.getElementById('count').innerText = 't = ' + ((count / PARTICLES_COUNT) * 100 * Math.PI);
 
   var destination = f((count / PARTICLES_COUNT) * 100 * Math.PI);
-  var x = canvas.width  / 2 + destination.x / 2;
-  var y = canvas.height / 2 + destination.y / 2;
+  var x = canvas.width  / 2 + destination.x * (2 / 3);
+  var y = canvas.height / 2 + destination.y * (2 / 3);
 
   count++;
 
