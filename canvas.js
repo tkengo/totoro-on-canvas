@@ -5,7 +5,7 @@ var ANIMATION_INTERVAL = 5;
 var canvas;
 var context;
 var count = 0;
-var hue = -1;
+var hue = Math.floor(Math.random() * 360);
 var timer = -1;
 
 $(function() {
